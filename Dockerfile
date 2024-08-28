@@ -3,7 +3,7 @@
  WORKDIR /home/student/practise-docker
 
 
- COPY package*.json /practise-docker/
+ COPY package*.json ./practise-docker/
 
  RUN npm install 
 
