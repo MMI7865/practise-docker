@@ -1,10 +1,12 @@
- FROM node:19-alpine
+ FROM node:18
 
- COPY package.json /app/
- COPY src /app/
+ WORKDIR /usr/src/app
 
- WORKDIR /app
+
+ COPY package*.json /app/
 
  RUN npm install 
+
+ COPY . .
 
  CMD ["node", "server.js"]
