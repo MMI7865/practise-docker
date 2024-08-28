@@ -1,9 +1,9 @@
  FROM node:18
 
- WORKDIR /usr/src/app
+ WORKDIR /home/student/practise-docker
 
 
- COPY package.json /app/
+ COPY package.json /practise-docker/
 
  RUN npm install 
 
